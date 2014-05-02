@@ -1,0 +1,152 @@
+$icon-font-path: "/fonts/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* Custom page header */
+.header {
+    background-color: lightgray;
+    border-radius: 6px;
+    margin-bottom: 3px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0
+}
+h4 {
+    font-size: 22px;
+    margin: 5px;
+}
+p {
+    font-size: 16px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.header .cart-button {
+    float: right;
+    margin: 8px;
+}
+
+/* Custom page footer */
+.footer {
+    margin-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container {
+    padding: 3px;
+}
+
+.splash {
+    height: 100%;
+    width: 100%
+}
+
+.green {
+    background-color: springgreen;
+}
+.gray {
+    background-color: gray;
+}
+
+.big-button {
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3px;
+    font-size: 40px;
+}
+.big-button.green:hover {
+    background-color: lawngreen;
+}
+.big-button.gray:hover {
+    background-color: darkgray;
+}
+
+.big-button h3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    top: 32%;
+}
+
+.tile-left {
+    float: left;
+    padding: 2%;
+    width: 56%;
+}
+.tile-left .name {
+    font-size: 22px;
+    margin: 5px;
+}
+
+.tile-right {
+    float: right;
+    padding: 2%;
+    width: 36%;
+}
+
+.tile-full {
+    text-align: center;
+    padding: 2%;
+    width: 96%;
+}
+
+.tile-bottom {
+    
+}
+
+.price {
+    font-size: 28px;
+}
+
+.quantity {
+    font-size: 24px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
