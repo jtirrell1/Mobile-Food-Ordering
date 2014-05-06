@@ -13,6 +13,10 @@ angular.module('udCisc612Group3App')
     	$location.path("/menu");
     }
 
+    $scope.checkout = function() {
+      $location.path("/checkout");
+    }
+
     $scope.removeFromCart = function(cartItemNum) {
 
     }
@@ -20,3 +24,4 @@ angular.module('udCisc612Group3App')
 
 
   });
+  
