@@ -17,8 +17,8 @@ angular.module('udCisc612Group3App')
       $location.path("/checkout");
     }
 
-    $scope.removeFromCart = function(cartItemNum) {
-
+    $scope.removeFromCart = function(index) {
+      $scope.$parent.removeFromCart(index);
     }
 
 

@@ -1,39 +1,22 @@
 <div class="header">
-  <a class="cart-button"><span>Cart</span> <span>$25.98</span></a></li>
+  <a class="cart-button"><span>Cart</span> <span>${{totalPrice}}</span></a></li>
   <h3 class="header-text">Cart</h3>
 </div>
 
-<div class="big-button gray">
+<div ng-repeat="d in cart" class="big-button gray">
   <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
+    <span class="name">{{d.name}}</span>
   </div>
   <span class="tile-right">
-    <span class="price">$12.99</span>
-    <span class="quantity">x2</span>
+    <span class="price">${{d.price}}</span>
+    <span class="quantity">x{{d.quantity}}</span>
   </span>
   <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
+    <p>{{d.description}}</p>
   </div>
   <div class="tile-full">
     <button class="button-advanced left">Edit</button>
-    <button ng-click="removeFromCart(1)" class="button-remove-from-cart right deny">Remove</button>
-  </div>
-</div>
-
-<div class="big-button gray">
-  <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
-  </div>
-  <span class="tile-right">
-    <span class="price">$12.99</span>
-    <span class="quantity">x1</span>
-  </span>
-  <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
-  </div>
-  <div class="tile-full">
-    <button class="button-advanced left">Edit</button>
-    <button ng-click="removeFromCart(1)" class="button-remove-from-cart right deny">Remove</button>
+    <button ng-click="removeFromCart($i)" class="button-remove-from-cart right deny">Remove</button>
   </div>
 </div>
 

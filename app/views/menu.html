@@ -1,60 +1,28 @@
-<div class="header">
-  <a class="cart-button" ng-click="cart()" href=""><span>Cart</span> <span>$25.98</span></a></li>
-  <h3 class="header-text">Menu</h3>
-</div>
+<div ng-controller="MenuCtrl">
 
-<a class="big-button gray">
-  <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
+  <div class="header">
+    <a class="cart-button" ng-click="cart()" href=""><span>Cart</span> <span>${{totalPrice}}</span></a></li>
+    <h3 class="header-text">Menu</h3>
   </div>
-  <span class="tile-right">
-    <span class="price">$12.99</span>
-  </span>
-  <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
-  </div>
-  <div class="tile-full">
-    <button class="button-advanced left">Advanced</button>
-    <button ng-click="addToCart(1)" class="button-add-to-cart right confirm">Add to Cart</button>
-  </div>
-</a>
 
-<a class="big-button gray">
-  <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
-  </div>
-  <span class="tile-right">
-    <span class="price">$12.99</span>
-  </span>
-  <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
-  </div>
-</a>
+  <a ng-repeat="d in menu" class="big-button gray" ng-click="toggleButtons(d)">
+    <div class="tile-left">
+      <span class="name">{{d.name}}</span>
+    </div>
+    <span class="tile-right">
+      <span class="price">${{d.price}}</span>
+    </span>
+    <div class="tile-full">
+      <p>{{d.description}}</p>
+    </div>
+    <div ng-show="d.active" class="buttons tile-full open">
+      <button class="button-advanced left">Advanced</button>
+      <button ng-click="addToCart(d)" class="button-add-to-cart right confirm">Add to Cart</button>
+    </div>
+  </a>
 
-<a class="big-button gray">
-  <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
+  <div class="footer">
+    <p>Made by Group 3, Inc.</p>
   </div>
-  <span class="tile-right">
-    <span class="price">$12.99</span>
-  </span>
-  <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
-  </div>
-</a>
 
-<a class="big-button gray">
-  <div class="tile-left">
-    <span class="name">Cheese Pizza</span>
-  </div>
-  <span class="tile-right">
-    <span class="price">$12.99</span>
-  </span>
-  <div class="tile-full">
-    <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
-  </div>
-</a>
-
-<div class="footer">
-  <p>Made by Group 3, Inc.</p>
 </div>
