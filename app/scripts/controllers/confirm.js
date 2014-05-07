@@ -8,5 +8,10 @@ angular.module('udCisc612Group3App')
       'Karma'
     ];
 
+	$scope.editCart = function()
+	{
+		console.log("got hrere");
+		$location.path("/cart");
+	}
 
   });
