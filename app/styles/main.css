@@ -9,7 +9,7 @@ body {
 /* Custom page header */
 .header {
     background-color: lightgray;
-    border-radius: 6px;
+    border-radius: 2px;
     margin-bottom: 3px;
 }
 
@@ -96,6 +96,10 @@ label {
     font-size: 22px;
     margin: 5px;
 }
+.tile-left .address {
+    font-size: 18px;
+    margin: 5px;
+}
 
 .tile-right {
     float: right;
@@ -104,23 +108,62 @@ label {
 }
 
 .tile-full {
+    display: inline-block;
     text-align: left;
     padding: 2%;
     width: 96%;
 }
-.tile-full input, .tile-full textarea {
-    width: 70%;
+.tile-full form input, .tile-full form textarea {
+    width: 66%;
+}
+.tile-full form input {
+    height: 20px;
+}
+.tile-full form textarea {
+    height: 40px;
+    margin-top: 20px;
+}
+.tile-full form label {
+    display: inline-block;
+    width: 28%;
 }
 .tile-full p {
     margin: 5px;
 }
 
-.tile-bottom {
-    
+button {
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+}
+button.full {
+    width: 100%;
+}
+button.left {
+    margin: 2%;
+    float: left;
+    width: 46%;
+}
+button.right {
+    margin: 2%;
+    float: right;
+    width: 46%;
+}
+button.confirm {
+    background-color: rgb(5, 180, 5);
+}
+button.deny {
+    //background-color: red;
 }
 
 .price {
     font-size: 28px;
+    font-weight: bold;
+}
+
+.distance {
+    font-size: 24px;
     font-weight: bold;
 }
 

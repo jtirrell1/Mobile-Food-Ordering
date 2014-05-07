@@ -15,8 +15,8 @@
     <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
   </div>
   <div class="tile-full">
-    <button class="button-advanced">Edit</button>
-    <button ng-click="removeFromCart(1)" class="button-remove-from-cart">Remove</button>
+    <button class="button-advanced left">Edit</button>
+    <button ng-click="removeFromCart(1)" class="button-remove-from-cart right deny">Remove</button>
   </div>
 </div>
 
@@ -32,13 +32,15 @@
     <p>This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!</p>
   </div>
   <div class="tile-full">
-    <button class="button-advanced">Edit</button>
-    <button ng-click="removeFromCart(1)" class="button-remove-from-cart">Remove</button>
+    <button class="button-advanced left">Edit</button>
+    <button ng-click="removeFromCart(1)" class="button-remove-from-cart right deny">Remove</button>
   </div>
 </div>
 
-<button ng-click="menu()">Back to Menu</button>
-<button ng-click="checkout()">Checkout</button>
+<div class="tile-full">
+  <button class="left" ng-click="menu()">Back to Menu</button>
+  <button class="right confirm" ng-click="checkout()">Checkout</button>
+</div>
 
 <div class="footer">
   <p>Made by Group 3, Inc.</p>
