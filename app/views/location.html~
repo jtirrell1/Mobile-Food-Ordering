@@ -4,7 +4,7 @@
 
 <div class="big-button gray">
   <div class="tile-full">
-    <img src="../map.png" width="100%" Height="260">
+    <img src="../map.png" width="100%" Height="100%">
   </div>
 </div>
 
