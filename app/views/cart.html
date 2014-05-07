@@ -1,30 +1,32 @@
-<div class="header">
-  <a class="cart-button"><span>Cart</span> <span>${{totalPrice}}</span></a></li>
-  <h3 class="header-text">Cart</h3>
-</div>
-
-<div ng-repeat="d in cart" class="big-button gray">
-  <div class="tile-left">
-    <span class="name">{{d.name}}</span>
+<div ng-controller="CartCtrl">
+  <div class="header">
+    <a class="cart-button"><span>Cart</span> <span>${{totalPrice}}</span></a></li>
+    <h3 class="header-text">Cart</h3>
   </div>
-  <span class="tile-right">
-    <span class="price">${{d.price}}</span>
-    <span class="quantity">x{{d.quantity}}</span>
-  </span>
+
+  <div ng-repeat="d in cart" class="big-button gray">
+    <div class="tile-left">
+      <span class="name">{{d.name}}</span>
+    </div>
+    <span class="tile-right">
+      <span class="price">${{d.price}}</span>
+      <span class="quantity">x{{d.quantity}}</span>
+    </span>
+    <div class="tile-full">
+      <p>{{d.description}}</p>
+    </div>
+    <div class="tile-full">
+      <button class="button-advanced left">Edit</button>
+      <button ng-click="removeFromCart($i)" class="button-remove-from-cart right deny">Remove</button>
+    </div>
+  </div>
+
   <div class="tile-full">
-    <p>{{d.description}}</p>
+    <button class="left" ng-click="menu()">Back to Menu</button>
+    <button class="right confirm" ng-click="checkout()">Checkout</button>
   </div>
-  <div class="tile-full">
-    <button class="button-advanced left">Edit</button>
-    <button ng-click="removeFromCart($i)" class="button-remove-from-cart right deny">Remove</button>
+
+  <div class="footer">
+    <p>Made by Group 3, Inc.</p>
   </div>
-</div>
-
-<div class="tile-full">
-  <button class="left" ng-click="menu()">Back to Menu</button>
-  <button class="right confirm" ng-click="checkout()">Checkout</button>
-</div>
-
-<div class="footer">
-  <p>Made by Group 3, Inc.</p>
 </div>

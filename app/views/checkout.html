@@ -1,36 +1,40 @@
-<div class="header">
-  <a class="cart-button"><span>Cart</span> <span>${{totalPrice}}</span></a></li>
-  <h3 class="header-text">Checkout</h3>
-</div>
+<div ng-controller="CheckoutCtrl">
 
-<div class="big-button gray">
-  <div class="tile-full">
-    <form>
-      <label>Option 1</label>
-      <input />
-      <label>Option 2 </label>
-      <input />
-      <label>Requests</label>
-      <textarea></textarea>
-    </form>
+  <div class="header">
+    <a class="cart-button"><span>Cart</span> <span>${{totalPrice}}</span></a></li>
+    <h3 class="header-text">Checkout</h3>
   </div>
-</div>
 
-<div class="big-button gray">
-  <div class="tile-full">
-    <form>
-      <label>CC Number</label>
-      <input />
-      <label>Security Code</label>
-      <input />
-      <label>Pickup Time</label>
-      <input />
-    </form>
+  <div class="big-button gray">
+    <div class="tile-full">
+      <form>
+        <label>Option 1</label>
+        <input />
+        <label>Option 2 </label>
+        <input />
+        <label>Requests</label>
+        <textarea></textarea>
+      </form>
+    </div>
   </div>
-</div>
 
-<button class="full confirm" ng-click="confirm()">Confirm</button>
+  <div class="big-button gray">
+    <div class="tile-full">
+      <form>
+        <label>CC Number</label>
+        <input />
+        <label>Security Code</label>
+        <input />
+        <label>Pickup Time</label>
+        <input />
+      </form>
+    </div>
+  </div>
 
-<div class="footer">
-  <p>Made by Group 3, Inc.</p>
+  <button class="full confirm" ng-click="confirm()">Confirm</button>
+
+	<div class="footer">
+	  <p>Made by Group 3, Inc.</p>
+	</div>
+  
 </div>
