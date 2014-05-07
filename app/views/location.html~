@@ -1,0 +1,41 @@
+<div class="header">
+  <h3 class="header-text">Locations</h3>
+</div>
+
+<div class="big-button gray">
+  <div class="tile-full">
+    <img src="../map.png" width="100%" Height="260">
+  </div>
+</div>
+
+<a class="big-button gray" ng-click="menu()">
+  <div class="tile-left">
+    <p>123 Restaurant Lane</p>
+  </div>
+  <span class="tile-right">
+    <p>2 miles</p>
+  </span>
+  <div class="tile-full"></div>
+</a>
+
+<a class="big-button gray" ng-click="menu()">
+  <div class="tile-left">
+    <p>123 Place Road</p>
+  </div>
+  <span class="tile-right">
+    <p>4 miles</p>
+  </span>
+</a>
+
+<a class="big-button gray" ng-click="menu()">
+  <div class="tile-left">
+    <p>123 Pothole Blvd.</p>
+  </div>
+  <span class="tile-right">
+    <p>7 miles</p>
+  </span>
+</a>
+
+<div class="footer">
+  <p>Made by Group 3, Inc.</p>
+</div>
