@@ -43,32 +43,32 @@ angular
       {
         'id': 1,
         'name': "Cheese Pizza",
-        'description': "This particular pizza is a cheese pizza. It's got sauce, and cheese. And crust! Don't forget the crust!",
-        'price': 12.99,
+        'description': "Delicious garlic-y crust topped with our signature marinara sauce and tons of fresh mozzerella cheese.",
+        'price': 9.99,
         'quantity': 1,
         'active': 0
       },
       {
         'id': 2,
         'name': "Pepperoni Pizza",
-        'description': "This particular pizza is a pepperoni pizza. It's got sauce, and cheese. And crust! Don't forget the crust!",
-        'price': 12.99,
+        'description': "Our signature sauce and cheese, with succulent pepperoni too!",
+        'price': 10.99,
         'quantity': 1,
         'active': 0
       },
       {
         'id': 3,
         'name': "Hawaiian Pizza",
-        'description': "This particular pizza is a hawaiian pizza. It's got sauce, and cheese. And crust! Don't forget the crust!",
-        'price': 12.99,
+        'description': "Want something more exotic? How about our signature sauce and cheese, with pineapple and ham?",
+        'price': 11.99,
         'quantity': 1,
         'active': 0
       },
       {
         'id': 4,
         'name': "Mushroom Pizza",
-        'description': "This particular pizza is a mushroom pizza. It's got sauce, and cheese. And crust! Don't forget the crust!",
-        'price': 12.99,
+        'description': "Our delicious crust, signature sauce, and cheese, with fresh local mushrooms.",
+        'price': 10.99,
         'quantity': 1,
         'active': 0
       }

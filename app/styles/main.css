@@ -51,11 +51,15 @@ label {
     line-height: 40px;
     text-align: center;
     font-size: 30px;
-    width: 75%;
+    width: 72%;
 }
 .header .cart-button {
     margin: 16px;
-    width: 25%;
+    width: 28%;
+    font-size: 22px;
+}
+.header .cart-button .ion-ios7-cart {
+    font-size: 23px;
 }
 
 /* Custom page footer */
