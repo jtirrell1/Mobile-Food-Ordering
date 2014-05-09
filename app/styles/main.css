@@ -12,6 +12,7 @@ body {
     margin-bottom: 3px;
     position: fixed;
     width: 100%;
+    display: inline-flex;
 }
 
 .content {
@@ -45,15 +46,16 @@ label {
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     line-height: 40px;
     text-align: center;
     font-size: 30px;
+    width: 75%;
 }
 .header .cart-button {
-    float: right;
-    margin: 8px;
+    margin: 16px;
+    width: 25%;
 }
 
 /* Custom page footer */

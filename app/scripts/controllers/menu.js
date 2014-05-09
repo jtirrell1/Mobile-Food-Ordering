@@ -20,8 +20,8 @@ angular.module('udCisc612Group3App')
     	$location.path("/cart");
     }
 
-    $scope.addToCart = function(item) { //adds item to cart but does not navigate away
-      $scope.$parent.addToCart(item);
+    $scope.addToCart = function(id) { //adds item to cart but does not navigate away
+      $scope.$parent.addToCart(id);
     }
 
     $scope.advancedOptions = function() {

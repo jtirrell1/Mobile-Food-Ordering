@@ -80,29 +80,33 @@ angular
 
     ];
 
-    $scope.addToCart = function(newitem) {
-      for (var i in $scope.cart) {
-        if ($scope.cart[i].id==newitem.id) {
+    $scope.addToCart = function(itemid) {
+      for (var i in $scope.cart) { //loop through cart, find same item
+        if ($scope.cart[i].id==itemid) {
           $scope.cart[i].quantity++;
           $scope.updatePrice();
           return;
         }
       }
-      $scope.cart.push(newitem);
+      for (var i in $scope.menu) { //loop through menu, find id
+        if ($scope.menu[i].id == itemid) {
+          $scope.cart.push(JSON.parse(JSON.stringify($scope.menu[i])));   
+        }
+      }
       $scope.updatePrice();
     }
 
     $scope.removeFromCart = function(index) {
-      console.log('removing from cart');
       $scope.cart.splice(index, 1);
       $scope.updatePrice();
     }
 
     $scope.updatePrice = function() {
-      $scope.totalPrice = 0;
+      var totalPrice = 0;
       for(var item in $scope.cart) {
-        $scope.totalPrice += $scope.menu[item].price * $scope.menu[item].quantity;
+        totalPrice += $scope.cart[item].price * $scope.cart[item].quantity;
       }
+      $scope.totalPrice = totalPrice.toFixed(2);
     }
 
   });

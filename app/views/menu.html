@@ -1,8 +1,8 @@
 <div ng-controller="MenuCtrl">
 
   <div class="header">
-    <a class="cart-button" ng-click="cart()" href=""><span>Cart</span> <span>${{totalPrice}}</span></a></li>
     <h3 class="header-text">Menu</h3>
+    <a class="cart-button" ng-click="cart()" href=""><span>Cart</span> <span>${{totalPrice}}</span></a>
   </div>
 
   <div class="content">
@@ -18,7 +18,7 @@
       </div>
       <div ng-show="d.active" class="buttons tile-full open">
         <button class="button-advanced left">Advanced</button>
-        <button ng-click="addToCart(d)" class="button-add-to-cart right confirm">Add to Cart</button>
+        <button ng-click="addToCart(d.id)" class="button-add-to-cart right confirm">Add to Cart</button>
       </div>
     </a>
   </div>
