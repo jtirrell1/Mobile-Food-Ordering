@@ -2,9 +2,6 @@
 
 angular
   .module('udCisc612Group3App', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
     'ngRoute'
   ])
   .config(function ($routeProvider) {
