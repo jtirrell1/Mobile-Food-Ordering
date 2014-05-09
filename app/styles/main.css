@@ -1,9 +1,8 @@
 /* Space out content a bit */
 body {
-    padding-top: 3px;
-    padding-bottom: 3px;
     font-family: 'Helvetica', 'Helvetica Neue';
     background: #EFEFEF;
+    margin: 0;
 }
 
 /* Custom page header */
@@ -11,6 +10,16 @@ body {
     background-color: lightgray;
     border-radius: 2px;
     margin-bottom: 3px;
+    position: fixed;
+    width: 100%;
+}
+
+.content {
+    padding: 3px;
+    padding-top: 68px;
+    padding-bottom: 3px;  
+    margin: 8px; 
+    margin-top: 0; 
 }
 
 a {
@@ -55,7 +64,6 @@ label {
 }
 
 .container {
-    padding: 3px;
 }
 
 .splash {

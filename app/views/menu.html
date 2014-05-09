@@ -5,21 +5,23 @@
     <h3 class="header-text">Menu</h3>
   </div>
 
-  <a ng-repeat="d in menu" class="big-button gray" ng-click="toggleButtons(d)">
-    <div class="tile-left">
-      <span class="name">{{d.name}}</span>
-    </div>
-    <span class="tile-right">
-      <span class="price">${{d.price}}</span>
-    </span>
-    <div class="tile-full">
-      <p>{{d.description}}</p>
-    </div>
-    <div ng-show="d.active" class="buttons tile-full open">
-      <button class="button-advanced left">Advanced</button>
-      <button ng-click="addToCart(d)" class="button-add-to-cart right confirm">Add to Cart</button>
-    </div>
-  </a>
+  <div class="content">
+    <a ng-repeat="d in menu" class="big-button gray" ng-click="toggleButtons(d)">
+      <div class="tile-left">
+        <span class="name">{{d.name}}</span>
+      </div>
+      <span class="tile-right">
+        <span class="price">${{d.price}}</span>
+      </span>
+      <div class="tile-full">
+        <p>{{d.description}}</p>
+      </div>
+      <div ng-show="d.active" class="buttons tile-full open">
+        <button class="button-advanced left">Advanced</button>
+        <button ng-click="addToCart(d)" class="button-add-to-cart right confirm">Add to Cart</button>
+      </div>
+    </a>
+  </div>
 
   <div class="footer">
     <p>Made by Group 3, Inc.</p>
